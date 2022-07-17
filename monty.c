@@ -1,4 +1,23 @@
 #include "monty.h"
+global_var var_g;
+
+/**
+ * free_dlistint - free linked list
+ * @h: pointer to first node
+ *
+ */
+
+void free_dlistint(stack_t *h)
+{
+	stack_t *tmp;
+
+	while (h != NULL)
+	{
+		tmp = h->next;
+		free(h);
+		h = tmp;
+	}
+}
 
 /**
  * main - main function for the monty interpreter
