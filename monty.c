@@ -1,4 +1,5 @@
 #include "monty.h"
+global_var var_g;
 
 /**
  * free_dlistint - free linked list
